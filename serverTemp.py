@@ -85,7 +85,7 @@ while True:
 
         print('{} {} {}'.format(c1_addr, c1_port, 50002))
         socket_dict[keys[1]].sendto('{} {} {}'.format(c1_addr, c1_port, 50055).encode(), c2)
-        socket_dict[keys[0]].sendto('{} {} {}'.format(c2_addr, c2_port, 50003).encode(), c1)
+        socket_dict[keys[0]].sendto('{} {} {}'.format(c2_addr, c2_port, 50055).encode(), c1)
         break
 """
 # Establish connection with client.
